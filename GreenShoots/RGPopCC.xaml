@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pages:PopupPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GreenShoots"
+    xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+    x:Class="GreenShoots.RGPopCC">
+
+    <ContentPage.Content>
+
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Spacing="0" BackgroundColor="Transparent">
+
+            <StackLayout x:Name="frmVehicleMap" WidthRequest="200" HeightRequest="250" BackgroundColor="Transparent" Opacity="0.5">
+                
+            </StackLayout>
+
+            <Frame HeightRequest="400"
+                Visual="Default"
+                HasShadow="True"
+                CornerRadius="12"
+                BackgroundColor="Green" VerticalOptions="EndAndExpand">
+
+                <StackLayout>
+
+                    <Grid x:Name="grdShareTwitter" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0" IsVisible="false">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                    
+                        <Label x:Name="lblShareNews" TextColor="White" Grid.Row="0" Grid.Column="0" Margin="0,20,0,0"
+                            Text="Share the News..." FontSize="20" FontAttributes="Bold"/>
+
+                        <Image x:Name="imgTwitterLogo" Source="{local:ImageResource GreenShoots.Assets.Images.TwitterBlue.png}" Grid.Row="0" Grid.Column="1" 
+                            Margin="20,-20,0,0" HeightRequest="100" WidthRequest="100" Aspect="AspectFit" VerticalOptions="StartAndExpand" HorizontalOptions="EndAndExpand">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="OnTapGestRecogTapOne"
+                                    NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                         </Image>
+
+                    </Grid>
+
+                    <Button
+                        Text="Other Share Options >>"
+                        Margin="0,-20,0,0"
+                        WidthRequest="225"
+                        HorizontalOptions="Center"
+                        BackgroundColor="White"
+                        BorderColor="Black"
+                        TextColor="Green"
+                        BorderWidth="2"
+                        FontSize="Small"
+                        CornerRadius="20"
+                        Clicked="OSOButton_Clicked" />
+
+                    <Frame Margin="10,20,10,0" Padding="0" x:Name="frmEarnBadge">
+                        <StackLayout Spacing="0">
+                            <Label x:Name="lblEarnBadge"
+                                Text="" 
+                                FontSize="18" Margin="5,5,5,5"
+                                TextColor="Green" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <StackLayout Spacing="15" VerticalOptions="EndAndExpand">
+
+                        <Image Source="{FontImage
+                            FontFamily={StaticResource FontAwesome},
+                            Glyph={x:Static local:IconFont.Recycle},
+                            Size=64,Color=White}"
+                            HorizontalOptions="Center"/>
+
+                        <Button
+                            Text="Close"
+                            Margin="0,0,0,0"
+                            WidthRequest="100"
+                            HorizontalOptions="Center"
+                            BackgroundColor="White"
+                            BorderColor="Black"
+                            TextColor="Green"
+                            BorderWidth="2"
+                            FontSize="Small"
+                            CornerRadius="20"
+                            Clicked="Button_Clicked" />
+
+                    </StackLayout>
+
+                </StackLayout>
+
+            </Frame>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</pages:PopupPage>

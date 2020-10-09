@@ -1,0 +1,110 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="4.7.0.968" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="linqtotwitter" Version="5.1.2" />
+    <PackageReference Include="Xamarin.Auth" Version="1.7.0" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.0.0.3" />
+    <PackageReference Include="Microsoft.Azure.DocumentDB.Core" Version="2.11.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\" />
+    <Folder Include="Assets\Images\" />
+    <Folder Include="Pages\" />
+    <Folder Include="Services\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Common\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Models\" />
+    <Folder Include="ViewModels\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\Images\GreenShootsOne.png" />
+    <None Remove="Assets\Images\GreenEarth152x152.png" />
+    <None Remove="Assets\Images\GreenEarthBottom.jpg" />
+    <None Remove="Assets\Images\SolarPanelsBase.jpg" />
+    <None Remove="Assets\Images\LightBulbBase.jpg" />
+    <None Remove="Assets\Images\BicyclesBase.jpg" />
+    <None Remove="Assets\Images\SkyScrapeBase.jpg" />
+    <None Remove="Assets\Images\TwitterLogin.png" />
+    <None Remove="Assets\Images\WaterFaucet.jpg" />
+    <None Remove="Assets\Images\UnplugAppliances.jpg" />
+    <None Remove="Assets\Images\WashLaundry.jpg" />
+    <None Remove="Assets\Images\AirDryCycle.jpg" />
+    <None Remove="Assets\Images\EcoFriendly.jpg" />
+    <None Remove="Assets\Images\WaterFaucetLS.jpg" />
+    <None Remove="Assets\Images\Twitter_Logo_Blue.png" />
+    <None Remove="Assets\Images\TwitterBlue.png" />
+    <None Remove="Assets\Images\ClothTowels.jpg" />
+    <None Remove="Assets\Images\PWB.jpg" />
+    <None Remove="Assets\Images\TOL.jpg" />
+    <None Remove="Assets\Images\RC.jpg" />
+    <None Remove="Assets\Images\DIC.jpg" />
+    <None Remove="Assets\Images\WaterBottles150x150.jpg" />
+    <None Remove="Assets\Images\RainWater150x150.jpg" />
+    <None Remove="Assets\Images\ReuseBatteries150x150.jpg" />
+    <None Remove="Assets\Images\FLF150x150.jpg" />
+    <None Remove="Assets\Images\TakeStairs150x150.jpg" />
+    <None Remove="Assets\Images\DPS150x150.jpg" />
+    <None Remove="Assets\Images\DPSLandscape.jpg" />
+    <None Remove="Assets\Images\CarbonFootprint.jpg" />
+    <None Remove="Assets\Images\CarAtHome.jpg" />
+    <None Remove="Assets\Images\GreenMakeover.jpg" />
+    <None Remove="Assets\Images\FixSomething.jpg" />
+    <None Remove="Assets\Images\JunkMail400X300.jpg" />
+    <None Remove="Assets\Images\GoPaperless.jpg" />
+    <None Remove="Assets\Images\AddPlants.jpg" />
+    <None Remove="Assets\Images\RecycleElectronics.jpg" />
+    <None Remove="Assets\Images\UnplugNight.jpg" />
+    <None Remove="Assets\Images\Ebooks.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\Images\GreenShootsOne.png" />
+    <EmbeddedResource Include="Assets\Images\GreenEarth152x152.png" />
+    <EmbeddedResource Include="Assets\Images\GreenEarthBottom.jpg" />
+    <EmbeddedResource Include="Assets\Images\SolarPanelsBase.jpg" />
+    <EmbeddedResource Include="Assets\Images\LightBulbBase.jpg" />
+    <EmbeddedResource Include="Assets\Images\BicyclesBase.jpg" />
+    <EmbeddedResource Include="Assets\Images\SkyScrapeBase.jpg" />
+    <EmbeddedResource Include="Assets\Images\TwitterLogin.png" />
+    <EmbeddedResource Include="Assets\Images\WaterFaucet.jpg" />
+    <EmbeddedResource Include="Assets\Images\UnplugAppliances.jpg" />
+    <EmbeddedResource Include="Assets\Images\WashLaundry.jpg" />
+    <EmbeddedResource Include="Assets\Images\AirDryCycle.jpg" />
+    <EmbeddedResource Include="Assets\Images\EcoFriendly.jpg" />
+    <EmbeddedResource Include="Assets\Images\WaterFaucetLS.jpg" />
+    <EmbeddedResource Include="Assets\Images\TwitterBlue.png" />
+    <EmbeddedResource Include="Assets\Images\ClothTowels.jpg" />
+    <EmbeddedResource Include="Assets\Images\PWB.jpg" />
+    <EmbeddedResource Include="Assets\Images\TOL.jpg" />
+    <EmbeddedResource Include="Assets\Images\RC.jpg" />
+    <EmbeddedResource Include="Assets\Images\DIC.jpg" />
+    <EmbeddedResource Include="Assets\Images\WaterBottles150x150.jpg" />
+    <EmbeddedResource Include="Assets\Images\RainWater.jpg" />
+    <EmbeddedResource Include="Assets\Images\ReuseBatteries.jpg" />
+    <EmbeddedResource Include="Assets\Images\FLF.jpg" />
+    <EmbeddedResource Include="Assets\Images\TakeStairs.jpg" />
+    <EmbeddedResource Include="Assets\Images\DPSLandscape.jpg" />
+    <EmbeddedResource Include="Assets\Images\CarbonFootprint.jpg" />
+    <EmbeddedResource Include="Assets\Images\CarAtHome.jpg" />
+    <EmbeddedResource Include="Assets\Images\GreenMakeover.jpg" />
+    <EmbeddedResource Include="Assets\Images\FixSomething.jpg" />
+    <EmbeddedResource Include="Assets\Images\JunkMail400X300.jpg" />
+    <EmbeddedResource Include="Assets\Images\GoPaperless.jpg" />
+    <EmbeddedResource Include="Assets\Images\AddPlants.jpg" />
+    <EmbeddedResource Include="Assets\Images\RecycleElectronics.jpg" />
+    <EmbeddedResource Include="Assets\Images\UnplugNight.jpg" />
+    <EmbeddedResource Include="Assets\Images\Ebooks.jpg" />
+  </ItemGroup>
+</Project>

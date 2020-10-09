@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GreenShoots"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" x:Class="GreenShoots.MainPage"
+    Title="Green Shoots">
+
+    <StackLayout>
+
+                <Frame Padding="16" x:Name="frmGreenShootsTop">
+                    <StackLayout Spacing="16">
+                        <Image Source="{local:ImageResource GreenShoots.Assets.Images.GreenShootsOne.png}" 
+                           Margin="0,0,0,0" 
+                           Aspect="AspectFit" />
+                        <Label x:Name="lblGreenShoots"
+                           Text="Green Shoots" 
+                           FontSize="20" 
+                           TextColor="DarkGreen" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Label Margin="5,10,5,10" x:Name="lblTwitterLogin" Text="Twitter Login Placehiolder..."
+                    FontSize="18" HorizontalTextAlignment="Center" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                   
+                <Image x:Name="imgBottomLevel" Source="{local:ImageResource GreenShoots.Assets.Images.GreenShootsOne.png}" Margin="0,0,0,0"
+                    HeightRequest="197" WidthRequest="300" Aspect="AspectFit" HorizontalOptions="CenterAndExpand" VerticalOptions="EndAndExpand" />
+
+    </StackLayout>
+
+</ContentPage>

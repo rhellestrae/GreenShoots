@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="GreenShoots.GSChallengeFour" 
+    xmlns:local="clr-namespace:GreenShoots">
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <Frame Margin="10,10,10,0" Padding="0" x:Name="frmGreenShootsTop">
+                <StackLayout Spacing="0">
+                    <Image Source="{local:ImageResource GreenShoots.Assets.Images.SkyScrapeBase.jpg}" 
+                        Margin="0,0,0,0" HeightRequest="175" WidthRequest="300"
+                        Aspect="AspectFill"/>
+                    <Label x:Name="lblGreenShoots"
+                        Text="Green Shoots" 
+                        FontSize="20" 
+                        TextColor="DarkGreen" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <Grid HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" Margin="10,10,10,0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+                    <RowDefinition />
+                    <RowDefinition Height="1*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Frame Margin="5,0,5,5" Padding="0" x:Name="frmGreenShootsTestImage">
+                    <StackLayout Spacing="0">
+                        <Image Source="{local:ImageResource GreenShoots.Assets.Images.CarbonFootprint.jpg}"
+                            HorizontalOptions="FillAndExpand" Margin="0,0,0,0"
+                            VerticalOptions="FillAndExpand" Aspect="AspectFill">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="OnTapGestRecogTapOne"
+                                    NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label x:Name="lblTurnOffFaucet"
+                                Text="Carbon Footprint" 
+                                TextColor="DarkGreen" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="5,0,5,5" Padding="0" x:Name="frmGreenShootsTwo" Grid.Row="0" Grid.Column="1">
+                    <StackLayout Spacing="0">
+                        <Image Source="{local:ImageResource GreenShoots.Assets.Images.CarAtHome.jpg}"
+                            HorizontalOptions="FillAndExpand" Margin="0,0,0,0"
+                            VerticalOptions="FillAndExpand" Aspect="AspectFill">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="OnTapGestRecogTapTwo"
+                                    NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label x:Name="lblUnplugAppliances"
+                            Text="Car @ Home" 
+                            TextColor="DarkGreen" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="5,5,5,0" Padding="0" x:Name="frmGreenShootsThree" Grid.Row="1" Grid.Column="0">
+                    <StackLayout Spacing="0">
+                        <Image Source="{local:ImageResource GreenShoots.Assets.Images.GreenMakeover.jpg}"
+                            HorizontalOptions="FillAndExpand" Margin="0,0,0,0"
+                            VerticalOptions="FillAndExpand" Aspect="AspectFill">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="OnTapGestRecogTapThree"
+                                    NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label x:Name="lblWashLaundry"
+                            Text="Green Makeover" 
+                            TextColor="DarkGreen" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                <Frame Margin="5,5,5,0" Padding="0" x:Name="frmGreenShootsFour" Grid.Row="1" Grid.Column="1">
+                    <StackLayout Spacing="0">
+                        <Image Source="{local:ImageResource GreenShoots.Assets.Images.FixSomething.jpg}"
+                            HorizontalOptions="FillAndExpand" Margin="0,0,0,0"
+                            VerticalOptions="FillAndExpand" Aspect="AspectFill">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="OnTapGestRecogTapFour"
+                                    NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label x:Name="lblAirDry"
+                            Text="Fix Something" 
+                            TextColor="DarkGreen" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+
+                 <Frame Margin="5,5,5,0" Padding="0" x:Name="frmGreenShootsFive" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2">
+                    <StackLayout Spacing="0">
+                        <Image x:Name="imgBottomLevel" Source="{local:ImageResource GreenShoots.Assets.Images.JunkMail400X300.jpg}"
+                               Margin="0,0,0,0" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                    Tapped="OnTapGestRecogTapFive"
+                                    NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        <Label x:Name="lblEcoFriendly"
+                            Text="Junk Mail" 
+                            TextColor="DarkGreen" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+                </Frame>
+        
+            </Grid>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>

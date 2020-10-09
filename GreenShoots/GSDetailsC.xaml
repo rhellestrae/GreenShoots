@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="GreenShoots.GSDetailsC"
+    xmlns:local="clr-namespace:GreenShoots" Title="Green Shoots">
+
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <Frame Margin="10,10,10,0" Padding="0" x:Name="frmGreenShootsTop">
+                <StackLayout Spacing="0">
+                    <Image x:Name="imgChallenge" Source="" 
+                        Margin="0,0,0,0" HeightRequest="175" WidthRequest="300"
+                        Aspect="AspectFill"/>
+                    <Label x:Name="lblGreenShoots"
+                        Text="" 
+                        FontSize="20" 
+                        TextColor="Green" HorizontalOptions="Center" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+
+            <Frame Margin="10,20,10,0" Padding="0" x:Name="frmDetailsC">
+                <StackLayout Spacing="0">
+                    <Label x:Name="lblTurnOffFaucet"
+                        Text="" 
+                        FontSize="18" Margin="5,5,5,5"
+                        TextColor="Black" HorizontalOptions="Start" HorizontalTextAlignment="Start"/>
+                </StackLayout>
+            </Frame>
+
+                    <Button
+                        Text="Current Badges >>"
+                        Margin="10,20,10,0"
+                        WidthRequest="200"
+                        HorizontalOptions="Center"
+                        VerticalOptions="CenterAndExpand"
+                        BackgroundColor="White"
+                        BorderColor="Black"
+                        TextColor="Green"
+                        BorderWidth="2"
+                        CornerRadius="20"
+                        FontSize="Small"
+                        Clicked="btnCurrentBadges_Clicked" />
+
+            
+
+            <Frame 
+                Visual="Default"
+                HasShadow="True"
+                CornerRadius="12"
+                BackgroundColor="Green" VerticalOptions="EndAndExpand">
+                <StackLayout Spacing="15">
+
+                    <Frame Margin="10,20,10,10" Padding="0" x:Name="frmEarnBadge">
+                <StackLayout Spacing="0">
+                    <Label x:Name="lblEarnBadge"
+                        Text="Tap Challenge Complete - Earn a Badge!" 
+                        FontSize="Medium" Margin="5,5,5,5"
+                        TextColor="Green" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </Frame>
+
+                    <Image Source="{FontImage
+                        FontFamily={StaticResource FontAwesome},
+                        Glyph={x:Static local:IconFont.Recycle},
+                        Size=64,Color=White}"
+                        HorizontalOptions="Center"/>
+
+                    <Button
+                        Text="Challenge Complete >>"
+                        Margin="0,0,0,0"
+                        WidthRequest="225"
+                        HorizontalOptions="Center"
+                        BackgroundColor="White"
+                        BorderColor="Black"
+                        TextColor="Green"
+                        BorderWidth="2"
+                        CornerRadius="20"
+                        FontSize="Small"
+                        Clicked="Button_Clicked" />
+
+                </StackLayout>
+            </Frame>
+
+
+            </StackLayout>
+
+    </ContentPage.Content>
+
+</ContentPage>
